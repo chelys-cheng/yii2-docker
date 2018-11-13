@@ -18,6 +18,6 @@ services:
       # Framework testing
       - ./_host-volumes/yii2:/yii2:delegated
       # Application testing
-      - ./_host-volumes/app:/app:delegated
+      - ./_host-volumes/app/web:/var/www/html:delegated
       # Composer cache
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
